@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Статистика — Автопарк 24</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo"><span>🚗</span> Автопарк 24</a>
+            <button class="burger" id="burger">☰</button>
+            <nav id="nav">
+                 <a href="index.html">Главная</a>
+   		 <a href="features.html">Возможности</a>
+   		 <a href="cars.html">Машины</a>
+   		 <a href="charts.html">Статистика</a>
+   		 <a href="about.html">О проекте</a>
+   		 <a href="contact.html">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Статистика <span class="gradient">автопарка</span></h1>
+            <p>Наглядные графики по пробегу, расходам и техническому обслуживанию</p>
+        </div>
+    </section>
+
+    <!-- ГРАФИК 1: ПРОБЕГ МАШИН -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Пробег <span class="accent">машин</span></h2>
+                <p>Пробег каждого автомобиля в километрах</p>
+            </div>
+            <div class="chart-wrapper fade-in">
+                <canvas id="mileageChart"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <!-- ГРАФИК 2: РАСХОДЫ НА ТОПЛИВО -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Расходы на <span class="accent">топливо</span></h2>
+                <p>Сколько потрачено на заправки за последние 7 дней</p>
+            </div>
+            <div class="chart-wrapper fade-in">
+                <canvas id="fuelChart"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <!-- ГРАФИК 3: ТО -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Состояние <span class="accent">ТО</span></h2>
+                <p>Насколько близко каждое ТО (в процентах до следующего обслуживания)</p>
+            </div>
+            <div class="chart-wrapper fade-in">
+                <canvas id="toChart"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Автопарк 24</h4>
+                    <p>Современное управление автопарком</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Навигация</h4>
+                    <a href="index.html">Главная</a>
+                    <a href="features.html">Возможности</a>
+                    <a href="cars.html">Машины</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Информация</h4>
+                    <a href="about.html">О проекте</a>
+                    <a href="contact.html">Контакты</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Автопарк 24. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/charts.js"></script>
+</body>
+</html>
